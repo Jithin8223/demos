@@ -1,0 +1,546 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>VETinary </title>
+
+
+    <!-- bootstrap css link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <!-- custom css -->
+    
+    <link rel="stylesheet" href="../Bootstrap-Project-1/css/style.css">
+
+    
+
+
+</head>
+<style>
+    
+
+/* navbar */
+#top-nav{
+    background-color:rgba(3, 5, 94, 0.707);
+    /* margin: 0rem 1.4rem; */
+    /* border: 2px solid red; */
+    padding:0rem 2% ;
+}
+
+.nav-logo
+{
+    width: 3rem;
+    
+}
+
+#top-nav .nav-link
+{
+    color:white;
+    font-size: 1.2rem;
+    font-weight: 500px;
+    /* border: 2px solid red; */
+    padding: 0.5rem 1.5rem;
+    margin-left: 2rem;
+    border-radius: 1.4rem;
+}
+#top-nav .nav-link:hover
+{
+    background-color: white;
+    color: rgba(3, 5, 94, 0.707) ;
+}
+
+.search-box::placeholder{
+    color:black;
+    text-align: center;
+    
+}
+.search-box:hover{
+    /* background-color:  rgba(61, 62, 102, 0.141); */
+    border: 2px solid rgb(0, 153, 255);
+}
+#search-btn{
+    color: whitesmoke;
+    border: 2px solid  rgba(3, 5, 94, 0.707);
+    /* position: relative; */
+    /* z-index: 99; */
+}
+#search-btn:hover{
+    color:white;
+    background-color:  rgba(3, 5, 94, 0.707);
+}
+
+
+
+
+
+
+/* Banner */
+.banner
+{   
+    background-color: rgba(193, 122, 81, 0.893);
+    /* background: url(../images/1.jpg) no-repeat center center/cover; */
+
+    /* border: 2px solid red; */
+    padding-bottom: 1.2rem;
+    
+    
+}
+#banner-text h1{
+    font-size: 4rem;
+    margin-top: 7rem;
+    
+    
+}
+#banner-text p{
+    color: rgba(3, 5, 94, 0.707);
+    font-size: 1.3rem;
+    font-weight: bolder;
+    font-family: monospace;
+    margin: 1.9rem 0rem;
+}
+
+ .banner-img img{
+    width: 90%;
+    margin-top: 4rem;
+    
+}
+
+.banner-btn-1{
+    background-color:rgba(3, 5, 94, 0.707) ;
+    color: white;
+    padding:15px 10px;
+    border: 2px solid white;
+    margin-right:20px;
+}
+.banner-btn-2{
+    color: white;
+    padding:15px 10px;
+    border: 2px solid white;
+}
+.banner-btn-1:hover , .banner-btn-2:hover{
+    background-color: white;
+    color:rgba(193, 122, 81, 0.893) ;
+    /* border:3px solid rgba(193, 122, 81, 0.893) ; */
+}
+/* service */
+
+#service{
+    height: 30%;
+}
+#service-text{
+    padding-top:10% ;
+    /* border: 2px solid red; */
+    padding-bottom: 5%;
+    height: 80%;
+}
+
+#service-text h1{
+    margin-top: 20px;
+    
+}
+#service-text p{
+    margin-top: 4       0px;
+    
+}
+
+#service-btn
+{
+    color: white;
+    background-color:rgba(3, 5, 94, 0.707) ;
+    border: 2px solid white;
+}
+
+#service-img img{
+    /* border: 2px solid red; */
+    /* height: 70%; */
+    height: 35rem;
+    padding:10%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border: 2px solid rgba(193, 122, 81, 0.893);
+}
+
+
+/* counter */
+
+#counter
+{
+    background-color: rgba(3, 5, 94, 0.707);
+    padding: 2rem;
+}
+
+.counter-icon
+{
+    font-size: 50px;
+    color: white;
+}
+
+.counter-item h3 
+{
+    color:white;
+}
+
+/* blog */
+
+#blog{
+    padding-top:40px;
+    padding-bottom:20px;
+}
+
+
+
+#blog-title{
+    font-size:50px;
+    font-weight: bold;
+    color: rgba(193, 122, 81, 0.893);
+}
+
+#blog-p{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+/* .blog-img{
+    height: 400px;
+} */
+.article-detail{
+    border:2px solid rgba(0, 0, 0, 0.166);
+    
+}
+.article-head{
+    color: rgba(3, 5, 94, 0.707);
+    font-weight: bold;
+}
+.article-date{
+    color:orange;
+}
+.random:hover{
+    transition: all 2s ease-in linear;
+    transform:translateY(-30px)
+}
+
+/* foooter */
+#footer{
+    background: rgba(0, 0, 0, 0.795);
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+#footer a{
+    text-decoration: none;
+    color:white;
+}
+
+#footer-btn{
+    color: white;
+    background-color: rgba(193, 122, 81, 0.893); 
+    border: none;
+    padding:7.2px 15px;
+}
+
+form input{
+    padding:4.5px 15px; 
+}
+.footer-input::placeholder
+{
+    text-align: center;
+    color: black;
+    
+}
+@media only screen and (max-width:1300) {
+   
+    .banner{
+        background-color: yellow;
+    }
+    .banner #banner-text h1 {
+        font-size: 2rem;
+        margin-top: 5rem;
+    }
+
+    #service
+    {
+        margin-top: 5rem;
+    }
+    
+}
+@media only screen and (max-width:768px){
+
+    .banner #banner-text h1 {
+        font-size: 3rem;
+        margin-top: 1.3rem;
+    }
+    .banner #banner-text p{
+        font-size:1rem;
+    }
+    .form-nav{
+        /* border:2px solid red; */
+        
+        position: relative;
+        left:2.8rem;
+        width: 90%;
+        margin-bottom: .9rem;
+    }
+    #service-img img{
+        border: 2px solid rgba(193, 122, 81, 0.893);  
+        /* height: 70%; */
+        height: 25rem;
+        margin-top: 5rem;
+       
+    }
+    #counter{
+        padding: 0;
+        
+    }
+
+    #counter .counter-item{
+        padding:0;
+        margin: 0 25px !important;
+    }
+    .random
+{
+    /* padding: 280px; */
+    width: 50%;
+}
+#footer{
+    justify-content: space-evenly !important;
+}
+
+    
+
+    
+    
+
+}
+@media only screen and (max-width:660px){
+    
+    .form-nav{
+        /* border:2px solid red; */
+        
+        width: 80%;
+        margin-bottom: .6rem;
+    }
+    
+    
+    
+    .banner #banner-text p{
+        font-size:1rem;
+    }
+    .banner #banner-text h1 {
+        font-size: 1.7rem;
+        
+    }
+    #service-img img{
+        border: 2px solid rgba(193, 122, 81, 0.893);  
+        /* height: 70%; */
+        height: 25rem;
+        margin-top: 3rem;
+        margin-left: 1.5rem;
+       
+    }
+    #counter .counter-item{
+        
+        margin: 5px  !important;
+    }
+    .counter-icon
+{
+    font-size: 30px;
+}
+.random
+{
+    width: 100%;
+    margin-top: 15px;
+}
+#blog-title{
+    font-size: 30px;
+}
+#blog-p
+{
+    font-size: 15px;
+
+}
+
+}
+</style>
+
+<body>
+
+
+
+    <!-- navbar -->
+    <nav id="top-nav" class="navbar navbar-expand-lg text-black ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="../Bootstrap-Project-1/images/logo.svg" alt="logo" class="img-fluid nav-logo">
+           
+        </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#service">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact    </a>
+              </li>
+              
+            </ul>
+            <form class="d-flex  form-nav" role="search">
+              <input class="form-control me-1 search-box" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit" id="search-btn"><i class="bi bi-search"></i></button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <!-- end of nav -->
+
+      <div class="container-fluid">
+        <div class="row justify-content-center banner ">
+            <div class="col-md-6 col-11" id="banner-text">
+                <h1 class="text-white">Interested to be DogLover!!</h1>
+                <p >Lorem ipsum dolor, sit amet Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus culpa totam provident sit natus quisquam corporis non cupiditate error aliquid? consectetur adipisicing elit. Accusamus facilis id sapiente.</p>
+                <button type="button" class="btn banner-btn-1">Contact US</button>
+                <button type="button" class="btn banner-btn-2">Our Services</button>
+
+            </div>
+            <div class="col-md-4 offset-1 d-none d-md-block banner-img ">
+                <img src="../Bootstrap-Project-1/images/banner.jpg" class="img-fluid" alt="">
+            </div>
+        </div>
+
+        <!-- service -->
+
+        <div class="row  justify-content-center"  id="service">
+            
+            <div class="col-md-5 col-11" id="service-img">
+                <img src="../Bootstrap-Project-1/images/1.jpg" class="img-fluid" alt="">
+
+            </div>
+            <div class="col-md-5 col-11" id="service-text">
+                <h1>Puppies of different breed ready to play</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur nobis veniam repellat ipsa libero earum deserunt consectetur voluptas modi accusamus ad, debitis maiores numquam impedit? Accusamus velit aut, culpa eligendi quis nostrum ut enim harum ipsum voluptatum? Dolor, deleniti iste?</p>
+                <button type="button" class="btn" id="service-btn">Our Puppies</button>
+
+            </div>
+        </div>
+
+        <!-- counter -->
+        <div class="row justify-content-center" id="counter">
+            <div class="col-md-3 text-center mt-5 mb-3 counter-item">
+                <i class="bi bi-android counter-icon"></i>
+                <h3>+343<br>Food Donation</h3>
+                
+            </div>
+            <div class="col-md-3 text-center mt-5 mb-3 counter-item">
+                <i class="bi bi-arrow-through-heart counter-icon"></i>
+                <h3>+1243<br>Dog Rescued</h3>
+            </div>
+            <div class="col-md-3 text-center mt-5 mb-3 counter-item">
+                <i class="bi bi-basket3 counter-icon"></i>
+                <h3>+763<br>Dog Adopted</h3>
+
+            </div>
+        </div>
+
+
+        <!-- blog -->
+        <div class="container">
+            <div class="row justify-content-center " id="blog">
+                <div class="col-12 text-center ">
+                    <h1 id="blog-title">Recent Adoption</h1>
+                    <p id="blog-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod molestiae aspernatur voluptatem sequi ullam perferendis facilis, autem aut fugiat omnis voluptate amet ut et doloremque? Accusamus corrupti quam inventore voluptas, molestiae corporis nihil laborum, animi libero et sint. Voluptatum, ex?</p>
+                </div>
+
+                <div class="col-md-3 random">
+                    <img src="../Bootstrap-Project-1/images/2.jpg" class="img-fluid blog-img" alt="">
+                    <div class="article-detail text-center">
+                        <h4 class="article-head">
+                            Dogs before turning 1
+                        </h4>
+                        <p class="article-date">Feburary 29,2023</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae eos atque dolore eveniet.</p>
+                        <p class="article-head">ReadMore+</p>
+                    </div>
+
+                </div>
+                <div class="col-md-3 random">
+                    <img src="../Bootstrap-Project-1/images/4.jpg" class="img-fluid blog-img" alt="">
+                    <div class="article-detail text-center">
+                        <h4 class="article-head">
+                            Dogs of all color
+                        </h4>
+                        <p class="article-date" >March 29,2023</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae eos atque dolore eveniet.</p>
+                        <p class="article-head">ReadMore+</p>
+                    </div>
+
+                </div>
+                <div class="col-md-3 random">
+                    <img src="../Bootstrap-Project-1/images/3.jpg" class="img-fluid blog-img" alt="">
+                    <div class="article-detail text-center">
+                        <h4 class="article-head">
+                             Other adoption agency
+                        </h4>
+                        <p class="article-date">April 29,2023</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae eos atque dolore eveniet.</p>
+                        <p class="article-head">ReadMore+</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- footer -->
+        <div class="row justify-content-center" id="footer">
+            <div class="col-md-3 ">
+                <h4 class="text-white">About</h4>
+                <a href="">History</a><br> 
+                <a href="">Our Team</a><br>
+                <a href="">Policies</a><br>
+                <a href="">Terms&Condition</a><br>
+                <a href="">Brand Guildelines</a>
+            </div>
+            <div class="col-md-2">
+                <h4 class="text-white">Services</h4>
+                <a href="">How to adopt</a><br> 
+                <a href="">Puppies</a><br>
+                <a href="">Our Status</a><br>
+                <a href="">Food Donation</a><br>
+                <a href="">Funding</a>
+
+            </div>
+            <div class="col-md-4 text-end random2">
+                <h3 class="text-white">Title Here</h3>
+                <p class="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores, commodi!</p>
+                <form action="">
+                    <input type="text" placeholder="Adopt" class="footer-input" >
+                    <button type="submit" class="btn" id="footer-btn"><i class="bi bi-folder"></i></button>
+                </form>
+            </div>
+
+        </div>
+        <!-- container fluid end -->
+      </div>
+
+
+    <!-- javascript CDN link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
